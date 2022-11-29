@@ -1,0 +1,26 @@
+For create database of localhost in phpMyAdmin
+
+Database Name: c5_studentRegistration
+Collation: utf8mb4_general_ci
+
+1. import table.sql
+2. import backup.sql
+
+Members: 
+	1. Chayathit 	Rattanapokil 		ID: 63070503405
+	2. Pooritouch 	Boontaweesawad 		ID: 63070503441
+	3. Muhammud 	Binhar 			ID: 63070503444
+	4. Kunnithi 	Treecharoensomboon 	ID: 63070503461
+	5. Nunthanut 	Krittirattanaviwat 	ID: 63070503471
+		
+Timeskip is used to for skip phase in website 
+- phase 1: register only
+- phase 2: due date bill 1
+- phase 3: due date bill 2
+- phase 4: due date bill 3
+Academic year is 2561-2563 in the database. You can modify year and semester for see analysis 2 to show
+report because analysis will display only in semester and year in timeskip show tab in website.
+Modify that:
+	/* INSERT DATA IN 1CURRENT_TIME */
+	INSERT INTO 1CURRENT_TIME (ACADEMIC_YEAR, SEMESTER, PHASE)
+	VALUES (2564, 1, 1);
